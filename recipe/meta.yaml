@@ -1,5 +1,5 @@
 {% set name = "bluesky-httpserver" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 39cc88f22a0511d14de1918ec06e8f27e67bdeb0b560f91aeb71ceaddf055463
+  sha256: d580c1818d5c86e53bad1968aafa8dbd0d2ac789f5b57268ecedf0efc4f3b2ef
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
     - python
   run:
     - bluesky-queueserver
+    - bluesky-queueserver-api
     - fastapi
     - python
     - pyzmq
