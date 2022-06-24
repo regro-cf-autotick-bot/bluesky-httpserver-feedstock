@@ -20,11 +20,18 @@ requirements:
     - pip
     - python
   run:
+    - alembic
     - bluesky-queueserver
     - bluesky-queueserver-api
     - fastapi
+    - ldap3
+    - orjson
+    - pamela
+    - python-jose
     - python
     - pyzmq
+    - sqlalchemy
+    - starlette
     - requests
     - typing-extensions  # [py<38]
     - uvicorn
