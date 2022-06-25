@@ -1,5 +1,5 @@
 {% set name = "bluesky-httpserver" %}
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ecb94d4ce9b8afd9cb33ac190daa51881ba63c45a7f8bdb8a8080012edf57216
+  sha256: 202292ff3e93e72d9b29fa3fb3b5e75f63c3980ff1740dbfd3906bbef6dcf07a
 
 build:
   number: 0
@@ -20,11 +20,18 @@ requirements:
     - pip
     - python
   run:
+    - alembic
     - bluesky-queueserver
     - bluesky-queueserver-api
     - fastapi
+    - ldap3
+    - orjson
+    - pamela
+    - python-jose
     - python
     - pyzmq
+    - sqlalchemy
+    - starlette
     - requests
     - typing-extensions  # [py<38]
     - uvicorn
