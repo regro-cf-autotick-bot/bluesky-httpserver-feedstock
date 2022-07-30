@@ -1,5 +1,5 @@
 {% set name = "bluesky-httpserver" %}
-{% set version = "0.0.5" %}
+{% set version = "0.0.6" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 202292ff3e93e72d9b29fa3fb3b5e75f63c3980ff1740dbfd3906bbef6dcf07a
+  sha256: 0cf7bc9d51a99e0b93d5bc2809a789eb9f343161c9d9f70bce27af9b7ea1d299
 
 build:
   number: 0
