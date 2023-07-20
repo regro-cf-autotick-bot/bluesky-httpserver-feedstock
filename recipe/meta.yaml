@@ -27,6 +27,7 @@ requirements:
     - ldap3
     - orjson
     - pamela
+    - pydantic-settings
     - python-jose
     - python
     - pyzmq
